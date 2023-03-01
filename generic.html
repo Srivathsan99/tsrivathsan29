@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Stellar by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="main1.css" />
+		<noscript><link rel="stylesheet" href="noscript1.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Personal Projects</h1>
+					</header>
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">		
+								<style>
+									img {
+									  display: block;
+									  margin-left: auto;
+									  margin-right: auto;
+									}
+								</style>					
+								<!---<img src="images/Collage_1.jpg" width="1000" height="750"> --->
+								<a href="https://github.com/Srivathsan99/Classificaiton-of-Audio-Using-Neural-Network/blob/main/Audio%20Project.ipynb#enroll-beta"><h2>Audio classification using Deep Neural Network</h2></a>
+								<ul>
+									<li>This project was done working with audio files using librosa instead of scipy.</li>
+									<li>Librosa uses mono audio sample conversion by default in 22050 Hz instead of scipy’s 11025Hz.</li>
+									<li>Using librosa feature.mfcc (mel frequency cepstral coefficients) we can summarize the frequency distribution.</li>
+									<li>MFCC helps us in analyzing the frequency and time characteristics of the source audio.</li>
+									<li>Sequential model built along with adam optimizer.</li>
+									<li>Dropout (to prevent overfitting) and batch normalization were used on each layer.</li>
+								</ul> 
+								<a href="https://github.com/Srivathsan99/Movie-Recommendation-System/blob/main/NLP%20Project%20(Movie%20Recommendation).ipynb"><h2>Movie Recommendation System</h2></a>
+								<ul>									
+									<li>Using tags, genres, average rating, and number of reviewers from different dataset are combined based on the movieID.</li>
+									<li>Nans on the tags are filled with genres of the movie.</li>
+									<li>As for preprocessing, nltk wordnet Lemmatization was used and the duplicate tags were removed.</li>
+									<li>For visualization Joint plot from seaborn were used to represent the frequency of reviewers for the average rating. Word cloud was used to show the most frequently occurring word.</li>
+									<li>Count Vectorizer is done to get the frequency count in each tag.</li>
+									<li>Finally, the movie recommendation is done based on cosine similarity to compare similarity between the features where 1 and 0 being high and low similarity respectively.</li>
+								</ul>
+								<a href="https://github.com/Srivathsan99/Heart-Failure/blob/main/Heart.ipynb"><h2>Heart Failure</h2></a>
+								<ul>
+									<li>Dataset that contains the person and health information of various candidates.</li>
+									<li>Heatmap used to visually see the correlation between the feature to determine the required feature.</li>
+									<li>Scaling is done using the sklearn library to bring the range of value between 0 and 1.</li>
+									<li>Balancing is done by oversampling the class 1 as about 67% of the target were 0.</li>
+									<li>Using cross-fold validation for model selection to know the model with consistent performance.</li>
+									<li>Ensemble models such as Random Forest and xgboost performed consistently better.</li>
+									<li>Learning curve to know more about test and train score.</li>
+									<li>Recall is used as evaluation as it is more suited for this scenario.</li>
+								</ul>
+								<a href="https://github.com/Srivathsan99/Online-Payment-Fraud/blob/main/Online%20Payment%20Fraud.ipynb"><h2>Fraudulent Transaction Detection</h2></a>
+								<ul>
+									<li>Dataset consists of mixture of integer, float, and object types of features.</li>
+									<li>MinMaxScaler is used for scaling the integer data between 0 and 1 whereas the categorical data are converted into integer data.</li>
+									<li>The dataset was heavily imbalanced, hence SMOTE technique was used for balancing the dataset.</li>
+									<li>Random forest model was used before and after using feature, the accuracy and runtime time were compared.</li>
+								</ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Contact info</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>Halifax, Canada</dd>
+								<dt>Phone</dt>
+								<dd>(782) 778-8701</dd>
+								<dt>Email</dt>
+								<dd><a href="#">sr399706@dal.ca</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-linkedin alt"><span class="label">linkedin</span></a></li>
+							</ul>
+						</section>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
